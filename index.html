@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="container mx-auto  p-10">
+        <input id="inputs" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
+        <button onclick="handleSearch()" id="btnss" class="btn btn-active btn-secondary">Search</button>
+    </div>
+
+    <div id="loading-spinner" class="text-center my-20 hidden">
+        <span class="loading loading-spinner text-error"></span>
+    </div>
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="">open modal</button> -->
+    <div id="model">
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box ">
+                <h3 id="show-Phone-brand" class="font-bold text-lg"></h3>
+                <h3 id="show-Phone-name" class="font-bold text-lg"></h3>
+                <div id="deatilsePhones" class="py-4">
+
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+    </div>
+
+    <div id="mainDiv" class=" grid grid-cols-3 gap-20 container mx-auto">
+
+        <!--  <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+                <h2 class="card-title">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-center">
+                    <button class="btn btn-primary w-full">Buy Now</button>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+    <div id="btnShows" class="container mx-auto hidden">
+        <button class="btn btn-success">Success</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
